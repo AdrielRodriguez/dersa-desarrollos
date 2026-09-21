@@ -62,3 +62,7 @@ Buscá `[[` en el archivo:
 
 El isotipo original está en `public/ChatGPT Image 21 sept 2026, 10_25_52 a.m..png` (blanco sobre transparente).
 A partir de él se generaron `public/logo-dark.png`, `public/logo-light.png`, `app/icon.png` y `app/apple-icon.png`.
+
+## Deploy
+
+Producción en Vercel: cada push a `main` genera un deploy automático.
