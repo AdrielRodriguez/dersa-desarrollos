@@ -18,7 +18,6 @@ app/
   layout.tsx              Fuente Inter, metadata SEO, Navbar, Footer, cookies
   page.tsx                Landing (orden de secciones)
   globals.css             Tokens de color (claro/oscuro), tipografía, utilidades
-  api/contact/route.ts    Envío del formulario (Resend / webhook n8n)
   privacidad/ terminos/   Páginas legales
   sitemap.ts robots.ts opengraph-image.tsx icon.png apple-icon.png not-found.tsx
 components/
@@ -29,19 +28,14 @@ components/
                           Logo, CookieConsent, JsonLd, Providers, LegalPage
 lib/
   content.ts              TODO el contenido editable (i18n-ready) + IMAGES + SITE
-  contact.ts              Validación compartida cliente/servidor
   image-loader.ts         Loader de next/image para Unsplash
   utils.ts
 ```
 
-## Formulario de contacto
+## Contacto
 
-`/api/contact` valida, filtra spam (honeypot + rate limit) y reenvía a:
-
-- **Resend**: `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL`
-- **Webhook (n8n/Make)**: `CONTACT_WEBHOOK_URL`
-
-Sin ninguna configurada, en desarrollo solo se loguea en consola; en producción devuelve error.
+La sección de contacto no usa formulario: ofrece WhatsApp (con mensaje precargado) y email.
+Textos en `content.contact`, datos en `SITE.contact` (`lib/content.ts`).
 
 ## Analytics
 

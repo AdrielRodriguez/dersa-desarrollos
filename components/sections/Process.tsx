@@ -9,7 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 const { process } = content;
 
 export function Process() {
-  const listRef = useRef<HTMLOListElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
   const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: listRef, offset: ["start 0.7", "end 0.6"] });
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30, mass: 0.4 });
@@ -28,7 +28,7 @@ export function Process() {
           </Reveal>
         </div>
 
-        <ol ref={listRef} className="relative lg:col-span-7">
+        <ul ref={listRef} className="relative lg:col-span-7">
           {/* Línea de progreso vinculada al scroll */}
           <span aria-hidden className="absolute bottom-3 left-[19px] top-3 w-px bg-line" />
           <motion.span
@@ -38,13 +38,11 @@ export function Process() {
           />
 
           {process.steps.map((step) => (
-            <li key={step.number} className="relative pb-14 pl-16 last:pb-0 md:pb-20">
+            <li key={step.title} className="relative pb-14 pl-16 last:pb-0 md:pb-20">
               <span
                 aria-hidden
-                className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-line bg-canvas text-[13px] font-semibold tabular-nums text-ink"
-              >
-                {step.number}
-              </span>
+                className="absolute left-[13.5px] top-[14px] z-10 h-3 w-3 rounded-full border border-ink/40 bg-canvas-alt"
+              />
               <Reveal delay={0.05}>
                 <h3 className="pt-1 text-[24px] leading-8 tracking-[-0.015em] text-ink md:text-[28px]">
                   {step.title}
@@ -58,7 +56,7 @@ export function Process() {
               </Reveal>
             </li>
           ))}
-        </ol>
+        </ul>
       </div>
     </section>
   );

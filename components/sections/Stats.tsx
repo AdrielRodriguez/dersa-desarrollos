@@ -11,9 +11,9 @@ export function Stats() {
         <h2 id="stats-title" className="sr-only">
           {stats.title}
         </h2>
-        <dl className="grid grid-cols-2 gap-x-6 gap-y-14 lg:grid-cols-4">
+        <dl className="grid gap-x-6 gap-y-14 sm:grid-cols-3">
           {stats.items.map((item, i) => (
-            <Reveal key={item.label} delay={i * 0.08} className="flex flex-col-reverse gap-3 text-center lg:text-left">
+            <Reveal key={item.label} delay={i * 0.08} className="flex flex-col-reverse gap-3 text-center">
               <dt className="text-[15px] text-ink-muted md:text-[17px]">{item.label}</dt>
               <dd className="text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-none tracking-[-0.035em] text-ink">
                 <Counter value={item.value} prefix={item.prefix} suffix={item.suffix} />

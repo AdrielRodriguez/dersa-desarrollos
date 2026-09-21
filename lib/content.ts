@@ -142,10 +142,9 @@ const es = {
   stats: {
     title: "DERSA en números",
     items: [
-      { value: 18, prefix: "", suffix: "", label: "Años de trayectoria" }, // [[años de experiencia]]
-      { value: 140, prefix: "+", suffix: "", label: "Proyectos entregados" }, // [[proyectos]]
-      { value: 85000, prefix: "", suffix: "", label: "m² construidos" }, // [[m2]]
-      { value: 24, prefix: "", suffix: "", label: "Premios y menciones" }, // [[premios]]
+      { value: 2, prefix: "", suffix: "", label: "Años de trayectoria" },
+      { value: 20, prefix: "+", suffix: "", label: "Proyectos entregados" },
+      { value: 4600, prefix: "+", suffix: "", label: "m² construidos" },
     ],
   },
 
@@ -213,11 +212,11 @@ const es = {
     intro: "Un método claro para que sepas en cada momento qué estamos haciendo, qué decidimos y qué viene después.",
     durationLabel: "Duración estimada",
     steps: [
-      { number: "01", title: "Descubrimiento", text: "Escuchamos cómo vivís o trabajás, visitamos el terreno y analizamos normativa, orientación y presupuesto. El resultado es un brief compartido.", duration: "2 a 3 semanas" },
-      { number: "02", title: "Concepto", text: "Bocetos, maquetas de volumetría y una primera visión del proyecto. Exploramos alternativas y elegimos juntos un camino.", duration: "3 a 5 semanas" },
-      { number: "03", title: "Desarrollo", text: "Planos generales, selección de materiales, instalaciones y detalles constructivos. El proyecto se vuelve preciso y presupuestable.", duration: "6 a 10 semanas" },
-      { number: "04", title: "Permisos y documentación", text: "Preparamos la documentación municipal y técnica, gestionamos los permisos y armamos el pliego para cotizar con constructoras.", duration: "4 a 12 semanas" },
-      { number: "05", title: "Obra y entrega", text: "Dirigimos la obra con visitas periódicas, controlamos calidad, plazos y certificaciones hasta la entrega de llaves.", duration: "Según el proyecto" },
+      { title: "Descubrimiento", text: "Escuchamos cómo vivís o trabajás, visitamos el terreno y analizamos normativa, orientación y presupuesto. El resultado es un brief compartido.", duration: "2 a 3 semanas" },
+      { title: "Concepto", text: "Bocetos, maquetas de volumetría y una primera visión del proyecto. Exploramos alternativas y elegimos juntos un camino.", duration: "3 a 5 semanas" },
+      { title: "Desarrollo", text: "Planos generales, selección de materiales, instalaciones y detalles constructivos. El proyecto se vuelve preciso y presupuestable.", duration: "6 a 10 semanas" },
+      { title: "Permisos y documentación", text: "Preparamos la documentación municipal y técnica, gestionamos los permisos y armamos el pliego para cotizar con constructoras.", duration: "4 a 12 semanas" },
+      { title: "Obra y entrega", text: "Dirigimos la obra con visitas periódicas, controlamos calidad, plazos y certificaciones hasta la entrega de llaves.", duration: "Según el proyecto" },
     ],
   },
 
@@ -301,41 +300,17 @@ const es = {
   contact: {
     eyebrow: "Contacto",
     title: "Empecemos a conversar.",
-    intro: "Completá el formulario y te respondemos dentro de las 48 horas hábiles.",
+    intro: "Escribinos por WhatsApp o por email y contanos tu idea. Te respondemos dentro de las 48 horas hábiles.",
+    whatsappCta: { title: "WhatsApp", text: "La forma más rápida de coordinar una primera reunión.", action: "Abrir chat" },
+    emailCta: { title: "Email", text: "Ideal para enviar planos, fotos o referencias.", action: "Escribir email" },
+    whatsappMessage: "Hola DERSA, quiero agendar una consulta para un proyecto.",
+    emailSubject: "Consulta desde la web",
     labels: {
       phone: "Teléfono",
       whatsapp: "WhatsApp",
       email: "Email",
       hours: "Horarios",
       social: "Redes",
-    },
-    form: {
-      name: "Nombre y apellido",
-      email: "Email",
-      phone: "Teléfono",
-      projectType: "Tipo de proyecto",
-      budget: "Presupuesto aproximado",
-      location: "Ubicación del proyecto",
-      message: "Contanos sobre tu proyecto",
-      consent: "Acepto que DERSA use estos datos para responder mi consulta, según la Política de Privacidad.",
-      select: "Seleccioná una opción",
-      projectTypes: ["Vivienda nueva", "Refacción o ampliación", "Interiorismo", "Oficinas o comercial", "Espacio público o institucional", "Otro"],
-      budgets: ["Hasta USD 50.000", "USD 50.000 – 150.000", "USD 150.000 – 400.000", "Más de USD 400.000", "Todavía no lo sé"],
-      submit: "Enviar consulta",
-      sending: "Enviando…",
-      successTitle: "¡Gracias! Recibimos tu consulta.",
-      successText: "Te vamos a escribir dentro de las próximas 48 horas hábiles.",
-      sendAnother: "Enviar otra consulta",
-      error: "No pudimos enviar tu mensaje. Probá de nuevo o escribinos a",
-      optional: "opcional",
-      errors: {
-        name: "Ingresá tu nombre.",
-        email: "Ingresá un email válido.",
-        phone: "Ingresá un teléfono válido.",
-        projectType: "Elegí un tipo de proyecto.",
-        message: "Contanos un poco más (mínimo 20 caracteres).",
-        consent: "Necesitamos tu consentimiento para responderte.",
-      },
     },
   },
 
@@ -368,7 +343,7 @@ const es = {
       title: "Política de Privacidad",
       updated: "Última actualización: septiembre de 2026",
       body: [
-        "DERSA Arquitectura recopila únicamente los datos que nos enviás a través del formulario de contacto (nombre, email, teléfono y detalles del proyecto) con el fin de responder tu consulta.",
+        "DERSA Arquitectura solo utiliza los datos que nos enviás por WhatsApp o email (nombre, teléfono, email y detalles del proyecto) para responder tu consulta.",
         "No vendemos ni compartimos tus datos con terceros. Podés solicitar el acceso, la rectificación o la eliminación de tus datos escribiendo a nuestro email de contacto.",
         "Las cookies analíticas solo se activan si las aceptás en el aviso de cookies. Podés cambiar tu elección en cualquier momento desde el pie de página.",
       ],
