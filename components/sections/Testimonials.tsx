@@ -87,7 +87,7 @@ export function Testimonials() {
               type="button"
               onClick={() => go(-1)}
               aria-label={testimonials.previous}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-canvas text-ink transition-colors hover:bg-line/60"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-canvas text-ink transition-colors hover:bg-line/60 md:h-10 md:w-10"
             >
               <ChevronLeft aria-hidden className="h-5 w-5" strokeWidth={1.5} />
             </button>
@@ -99,7 +99,7 @@ export function Testimonials() {
                   onClick={() => setIndex(i)}
                   aria-label={`${testimonials.goTo} ${i + 1}`}
                   aria-current={i === index}
-                  className="flex h-6 items-center"
+                  className="flex h-11 min-w-[24px] items-center justify-center md:h-6 md:min-w-0"
                 >
                   <span
                     className={cn(
@@ -114,7 +114,7 @@ export function Testimonials() {
               type="button"
               onClick={() => go(1)}
               aria-label={testimonials.next}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-canvas text-ink transition-colors hover:bg-line/60"
+              className="flex h-11 w-11 items-center justify-center rounded-full bg-canvas text-ink transition-colors hover:bg-line/60 md:h-10 md:w-10"
             >
               <ChevronRight aria-hidden className="h-5 w-5" strokeWidth={1.5} />
             </button>

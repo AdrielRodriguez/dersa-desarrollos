@@ -22,7 +22,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-full text-ink transition-colors hover:bg-line/60"
+                className="flex h-11 w-11 items-center justify-center rounded-full text-ink transition-colors hover:bg-line/60 md:h-9 md:w-9"
               >
                 <Instagram aria-hidden className="h-4 w-4" strokeWidth={1.5} />
               </a>

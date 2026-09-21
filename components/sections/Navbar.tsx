@@ -60,7 +60,7 @@ export function Navbar() {
         )}
       >
         <nav aria-label="Principal" className="container-content flex h-full items-center justify-between gap-6">
-          <Link href="/" aria-label="DERSA, ir al inicio" onClick={() => setOpen(false)}>
+          <Link href="/" aria-label="DERSA, ir al inicio" className="-my-2 flex items-center py-2" onClick={() => setOpen(false)}>
             <Logo />
           </Link>
 
@@ -87,7 +87,7 @@ export function Navbar() {
               aria-expanded={open}
               aria-controls="mobile-menu"
               aria-label={open ? nav.closeMenu : nav.openMenu}
-              className="relative -mr-2 flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
+              className="relative -mr-2 flex h-11 w-11 items-center justify-center rounded-full lg:hidden"
             >
               <span
                 aria-hidden
@@ -119,9 +119,9 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-canvas pt-nav lg:hidden"
+            className="fixed inset-0 z-40 overflow-y-auto overscroll-contain bg-canvas pt-nav lg:hidden"
           >
-            <nav aria-label="Menú mobile" className="container-content flex h-full flex-col pb-10 pt-8">
+            <nav aria-label="Menú mobile" className="container-content flex min-h-full flex-col pb-10 pt-8">
               <ul className="space-y-1">
                 {nav.links.map((link, i) => (
                   <motion.li

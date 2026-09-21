@@ -302,9 +302,8 @@ const es = {
     title: "Empecemos a conversar.",
     intro: "Escribinos por WhatsApp o por email y contanos tu idea. Te respondemos dentro de las 48 horas hábiles.",
     whatsappCta: { title: "WhatsApp", text: "La forma más rápida de coordinar una primera reunión.", action: "Abrir chat" },
-    emailCta: { title: "Email", text: "Ideal para enviar planos, fotos o referencias.", action: "Escribir email" },
+    emailCta: { title: "Email", text: "Ideal para enviar planos, fotos o referencias." },
     whatsappMessage: "Hola DERSA, quiero agendar una consulta para un proyecto.",
-    emailSubject: "Consulta desde la web",
     labels: {
       phone: "Teléfono",
       whatsapp: "WhatsApp",

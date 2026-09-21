@@ -29,14 +29,14 @@ export function FinalCTA() {
               href={SITE.contact.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-night-fg/80 transition-colors hover:text-night-fg"
+              className="-my-2.5 inline-flex items-center gap-2 py-2.5 text-night-fg/80 transition-colors hover:text-night-fg"
             >
               <MessageCircle aria-hidden className="h-4 w-4" strokeWidth={1.5} />
               {finalCta.whatsapp}
             </a>
             <a
               href={`mailto:${SITE.contact.email}`}
-              className="inline-flex items-center gap-2 text-night-fg/80 transition-colors hover:text-night-fg"
+              className="-my-2.5 inline-flex items-center gap-2 py-2.5 text-night-fg/80 transition-colors hover:text-night-fg"
             >
               <Mail aria-hidden className="h-4 w-4" strokeWidth={1.5} />
               {finalCta.email}

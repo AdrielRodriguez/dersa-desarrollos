@@ -33,7 +33,7 @@ export function Philosophy() {
 
       {/* Desktop: sticky */}
       <div ref={ref} className="relative hidden lg:block" style={{ height: `${count * 100}vh` }}>
-        <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <div className="sticky top-0 flex h-screen items-center overflow-hidden supports-[height:100svh]:h-[100svh]">
           <div className="container-content grid grid-cols-12 items-center gap-16">
             <div className="col-span-5">
               <p className="eyebrow mb-8 text-stone">{philosophy.eyebrow}</p>

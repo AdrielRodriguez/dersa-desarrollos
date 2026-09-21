@@ -85,7 +85,7 @@ export function Hero() {
           </Link>
           <Link
             href={hero.secondaryCta.href}
-            className="group inline-flex items-center gap-0.5 text-[17px] text-night-fg hover:underline underline-offset-4"
+            className="group -my-2.5 inline-flex items-center gap-0.5 py-2.5 text-[17px] text-night-fg hover:underline underline-offset-4"
           >
             {hero.secondaryCta.label}
             <ChevronRight
