@@ -26,9 +26,6 @@ export default function OpengraphImage() {
           <div style={{ fontSize: 108, fontWeight: 600, letterSpacing: "-0.03em", lineHeight: 1.02 }}>
             {content.hero.title}
           </div>
-          <div style={{ marginTop: 28, fontSize: 30, color: "#A1A1A6", maxWidth: 900 }}>
-            Estudio de arquitectura
-          </div>
         </div>
         <div style={{ width: 120, height: 4, background: "#B8A99A" }} />
       </div>

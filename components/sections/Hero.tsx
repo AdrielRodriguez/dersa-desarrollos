@@ -49,14 +49,16 @@ export function Hero() {
         style={reduce ? undefined : { y: contentY, opacity: contentOpacity }}
         className="container-content relative z-10 text-center"
       >
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.1, ease }}
-          className="eyebrow mb-6 text-night-fg/75"
-        >
-          {hero.eyebrow}
-        </motion.p>
+        {hero.eyebrow && (
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.1, ease }}
+            className="eyebrow mb-6 text-night-fg/75"
+          >
+            {hero.eyebrow}
+          </motion.p>
+        )}
         <motion.h1
           id="hero-title"
           initial={{ opacity: 0, y: 24, filter: "blur(10px)" }}

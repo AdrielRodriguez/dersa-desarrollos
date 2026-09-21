@@ -60,8 +60,8 @@ export function Navbar() {
         )}
       >
         <nav aria-label="Principal" className="container-content flex h-full items-center justify-between gap-6">
-          <Link href="/" aria-label="DERSA, ir al inicio" className="-my-2 flex items-center py-2" onClick={() => setOpen(false)}>
-            <Logo />
+          <Link href="/" aria-label="Derudder Desarrollos, ir al inicio" className="-my-2 flex items-center py-2" onClick={() => setOpen(false)}>
+            <Logo label="Derudder Desarrollos" wordmarkClassName="text-[14px] tracking-[0.02em] sm:text-[15px]" />
           </Link>
 
           <ul className="hidden items-center gap-8 lg:flex">

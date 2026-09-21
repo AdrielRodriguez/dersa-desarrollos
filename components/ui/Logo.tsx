@@ -11,10 +11,14 @@ import { cn } from "@/lib/utils";
 export function Logo({
   tone = "auto",
   showWordmark = true,
+  label = "DERSA",
+  wordmarkClassName = "text-[15px] tracking-[0.32em]",
   className,
 }: {
   tone?: "auto" | "dark" | "light";
   showWordmark?: boolean;
+  label?: string;
+  wordmarkClassName?: string;
   className?: string;
 }) {
   const mark = (src: string, extra?: string) => (
@@ -34,11 +38,12 @@ export function Logo({
       {showWordmark && (
         <span
           className={cn(
-            "text-[15px] font-semibold tracking-[0.32em]",
+            "whitespace-nowrap font-semibold",
+            wordmarkClassName,
             tone === "light" ? "text-night-fg" : tone === "dark" ? "text-[#1D1D1F]" : "text-ink"
           )}
         >
-          DERSA
+          {label}
         </span>
       )}
     </span>

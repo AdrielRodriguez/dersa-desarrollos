@@ -61,7 +61,7 @@ export const SITE = {
   name: "DERSA",
   legalName: "DERSA Arquitectura",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dersa.com.ar", // [[dominio]]
-  foundingYear: 2024,
+  foundingYear: 2020,
   contact: {
     country: "AR",
     phone: "+54 3442 621770",
@@ -97,9 +97,9 @@ export type IconName =
    -------------------------------------------------------------------------- */
 const es = {
   meta: {
-    title: "DERSA Arquitectura — Arquitectura, destilada.",
+    title: "DERSA — Arquitectura e Ingeniería.",
     description:
-      "Estudio de arquitectura. Diseñamos viviendas, espacios de trabajo y espacios públicos con claridad, luz y honestidad material.",
+      "Diseñamos y proyectamos soluciones habitables para vos.",
     keywords: [
       "estudio de arquitectura",
       "diseño de viviendas",
@@ -124,11 +124,11 @@ const es = {
   },
 
   hero: {
-    eyebrow: "Estudio de arquitectura",
-    title: "Arquitectura, destilada.",
+    eyebrow: "",
+    title: "Arquitectura e Ingeniería.",
     // Alternativas: "Espacios que respiran." / "Diseñados para ser vividos."
     subtitle:
-      "Diseñamos viviendas, espacios de trabajo y espacios públicos con claridad, luz y honestidad material.",
+      "Diseñamos y proyectamos soluciones habitables para vos.",
     primaryCta: { label: "Ver servicios", href: "#servicios" },
     secondaryCta: { label: "Agendá una consulta", href: "#contacto" },
     scrollHint: "Deslizá para descubrir",
@@ -159,8 +159,8 @@ const es = {
     image: IMAGES.studio,
     founder: {
       name: "Kevin Rodriguez",
-      role: "Maestro Mayor de Obras · Fundador y Director",
-      bio: "Maestro Mayor de Obras, con experiencia en el desarrollo y dirección de proyectos arquitectónicos de pequeña y mediana escala. Desde la fundación de DERSA en 2024, ha trabajado en la creación de espacios funcionales, contemporáneos y adaptados a las necesidades de cada cliente, acompañando cada proyecto desde su concepción hasta su ejecución.",
+      role: "Ingeniero Civil · Fundador y Director",
+      bio: "Ingeniero Civil con perfil enfocado en la dirección estratégica y el desarrollo integral de proyectos de ingeniería y arquitectura. Al frente de la empresa como CEO desde su fundación en 2020, impulsa la ejecución de obras contemporáneas de alta precisión, respaldadas por la solvencia técnica, la innovación y un compromiso firme con la excelencia ejecutiva de cada proyecto.",
       image: IMAGES.founder,
     },
     values: [
@@ -314,7 +314,7 @@ const es = {
   },
 
   footer: {
-    tagline: "Arquitectura, destilada.",
+    tagline: "Arquitectura e Ingeniería.",
     columns: [
       { title: "Estudio", links: [{ label: "Sobre nosotros", href: "/#estudio" }, { label: "Filosofía", href: "/#filosofia" }, { label: "Proceso", href: "/#proceso" }] },
       { title: "Servicios", links: [{ label: "Diseño arquitectónico", href: "/#servicios" }, { label: "Interiores", href: "/#servicios" }, { label: "Dirección de obra", href: "/#servicios" }] },
