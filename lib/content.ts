@@ -97,7 +97,7 @@ export type IconName =
    -------------------------------------------------------------------------- */
 const es = {
   meta: {
-    title: "DERSA — Arquitectura e Ingeniería.",
+    title: "Derudder Desarrollos — Arquitectura e Ingeniería.",
     description:
       "Diseñamos y proyectamos soluciones habitables para vos.",
     keywords: [
