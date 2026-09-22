@@ -142,7 +142,7 @@ const es = {
   stats: {
     title: "DERSA en números",
     items: [
-      { value: 2, prefix: "", suffix: "", label: "Años de trayectoria" },
+      { value: 6, prefix: "+", suffix: "", label: "Años de trayectoria" },
       { value: 20, prefix: "+", suffix: "", label: "Proyectos entregados" },
       { value: 4600, prefix: "+", suffix: "", label: "m² construidos" },
     ],
