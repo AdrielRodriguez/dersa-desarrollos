@@ -66,3 +66,4 @@ A partir de él se generaron `public/logo-dark.png`, `public/logo-light.png`, `a
 ## Deploy
 
 Producción en Vercel: cada push a `main` genera un deploy automático.
+Para correrlo en local: `npm run dev` → http://localhost:3000
